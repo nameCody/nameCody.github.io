@@ -1,0 +1,353 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="author" content="Cody">
+  
+  
+  
+  
+    <meta name="description" content="IROS Service Robot TrackIntorduction&emsp;Ten example tasks, and competition rules are  provided with detail.&gt;details&lt; Each team has 60 minutes to gain as many points as possible. All of the ...">
+  
+  <title>Competition [ Hexo ]</title>
+  
+  
+    <link rel="shortcut icon" href="/hollow.ico">
+  
+  
+  
+<link rel="stylesheet" href="/css/random.css">
+<link rel="stylesheet" href="/css/vegas.min.css">
+<link rel="stylesheet" href="/css/highlight-railscasts.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
+
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+<div class="side-navigate hide-area">
+  
+    <div class="item prev">
+      <a href="/2020/05/05/hello-world/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Hello World
+      </div>
+    </div>
+  
+  
+    <div class="item next">
+      <a href="/2019/11/15/Track/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Track
+      </div>
+    </div>
+  
+</div>
+<div id="outer-container" class="hide-area">
+<div id="container">
+  <div id="menu-outer" class="slide-down">
+    <div id="menu-inner">
+      <div id="brand">
+        
+        <a onClick="openUserCard()">
+          <img id="avatar" src="images/avatar.jpg"/>
+          <div id="homelink">Hexo</div>
+        </a>
+      </div>
+      <div id="menu-list">
+        <ul>
+        
+        
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="https://github.com/stiekel" target="_blank" rel="noopener">Github</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  
+
+  <article id="post">
+    <h1>Competition</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">Created at 2019-11-20</span>
+      
+        <span id = "post-title-updated">Updated at 2020-05-07</span>
+      
+      
+      
+      <span id = "post-title-tags">
+      Tag
+      
+      
+        
+        
+        <a href="/tags/competiton/">competiton</a>
+      
+      </span>
+      
+    </p>
+    
+    <h1 id="IROS-Service-Robot-Track"><a href="#IROS-Service-Robot-Track" class="headerlink" title="IROS Service Robot Track"></a><center>IROS Service Robot Track</center></h1><h3 id="Intorduction"><a href="#Intorduction" class="headerlink" title="Intorduction"></a>Intorduction</h3><p>&emsp;Ten example tasks, and competition rules are  provided with detail.&gt;<a href="https://rpal.cse.usf.edu/competition_iros2019/Competition_task_Examples.pdf" target="_blank" rel="noopener" title="With a Title">details</a>&lt; Each team has 60 minutes to gain as many points as possible. All of the ten tasks in the competition will be released two days before the competition day. The competition setups will be accessible one day before the competition.</p>
+<a id="more"></a>
+
+<h3 id="Our-Methods"><a href="#Our-Methods" class="headerlink" title="Our Methods"></a>Our Methods</h3><p>&emsp;In this competition, I am mainly responsible for the positioning of desktop objects. Since I didn’t know the scene environment of the competition, I adopted the traditional method and the deep learning method to test the effect.</p>
+<p align="center"> <img src="/images/service1.jpg" width="40%" height="40%" title="Photo when we are doing experiments in the laboratory">
+
+</p><p>&emsp;For the traditional method, I mainly use the combination of geometric features, color features and other features of the object to locate. We set the phase frame directly above the desktop (although this may not be the best choice in later competitions). For transparent objects such as ice bucket and water bottle, we infer the center coordinate of the object by extracting the position of non-transparent objects such as water bottle cap and combining with the geometric relationship. For other small objects such as straws placed in the tray, we determine the position information by recognizing the positioning of the tray.</p>
+<p align="center"> <img src="/images/service3.jpg" width="40%" height="40%" title="Photo when we participated in the competition">
+
+</p><p>&emsp;For the method of deep learning, we adopt the method of instance segmentation. We will provide the object to make data sets for training. Since the factors such as the scene light and the desktop had a great impact on the result, the test effect was not ideal. Before the game, we decided to give up this method and adopt the traditional visual method.</p>
+<h3 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h3><p>&emsp;The teams participating in this competition are universities from around the world such as Cambridge University, Tsinghua University, etc. Finally we won the fourth place in the competition.</p>
+
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <div class="random-toc">
+    <h2>Table of Content</h2>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IROS-Service-Robot-Track"><span class="toc-text">IROS Service Robot Track</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Intorduction"><span class="toc-text">Intorduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Our-Methods"><span class="toc-text">Our Methods</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Results"><span class="toc-text">Results</span></a></li></ol></li></ol></li></ol>
+  </div>
+</div>
+
+  
+<nav id="pagination">
+  
+    <a href="/2020/05/05/hello-world/" class="prev">&larr; Prev post Hello World</a>
+  
+
+  
+
+  
+    <a href="/2019/11/15/Track/" class="next">Next post Track &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+
+      
+      
+    </div>
+  </div>
+
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by Cody using
+      <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random" target="_blank" rel="noopener">Random</a>
+      <br>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div id="user-card">
+  <div class="center-field">
+    <img class="avatar" src="images/avatar.jpg">
+    <p id="description"></p>
+    <ul class="social-icon">
+  
+  
+    <li>
+      <a href="https://github.com/stiekel" target="_blank" rel="noopener">
+        
+          <i class="icon iconfont github">&#xe606;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://weibo.com/sidcn" target="_blank" rel="noopener">
+        
+          <i class="icon iconfont weibo">&#xe602;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="histkc@gmail.com">
+        
+          M
+        
+      </a>
+    </li>
+  
+</ul>
+  </div>
+</div>
+
+
+<div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
+
+
+
+
+  
+  
+    <script src="/js/jquery-2.2.3.min.js"></script>
+  
+    <script src="/js/vegas.min.js"></script>
+  
+    <script src="/js/random.js"></script>
+  
+    <script src="/js/highlight.pack.js"></script>
+  
+    <script src="/js/jquery.mousewheel.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
+
+<script>
+
+  // fancybox
+  var backgroundImages = [];
+  
+  $('#post').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
+      var alt = this.alt || this.title;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'post' + i);
+    });
+  });
+  $(".fancybox").fancybox();
+
+var vegasConfig = {"preload­Image":true,"transition":["flash"],"timer":true,"delay":1500000,"shuffle":true,"count":12};
+var unsplashConfig = {"gravity":"center"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+
+var backgroundColor = "34495E";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
+</body>
+</html>
+
